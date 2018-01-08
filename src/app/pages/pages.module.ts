@@ -11,12 +11,14 @@ import { PagesComponent } from './pages.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementarComponent } from '../components/incrementar/incrementar.component';
 import { AccountSettingdComponent } from './account-settingd/account-settingd.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
 @NgModule({
   declarations: [DashboardComponent, ProgessComponent, Graficas1Component,
-    PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent],
+    PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent, PromesasComponent, RxjsComponent],
   imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule],
   exports: [DashboardComponent, ProgessComponent, Graficas1Component, PagesComponent],
   providers: []
