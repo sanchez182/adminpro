@@ -10,12 +10,13 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementarComponent } from '../components/incrementar/incrementar.component';
+import { AccountSettingdComponent } from './account-settingd/account-settingd.component';
 
 
 
 @NgModule({
   declarations: [DashboardComponent, ProgessComponent, Graficas1Component,
-    PagesComponent, IncrementarComponent, GraficoDonaComponent],
+    PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent],
   imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule],
   exports: [DashboardComponent, ProgessComponent, Graficas1Component, PagesComponent],
   providers: []
