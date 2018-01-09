@@ -16,14 +16,16 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CommonModule } from '@angular/common';
-
-
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+ 
 
 @NgModule({
   declarations: [DashboardComponent, ProgessComponent, Graficas1Component,
     PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent,
-     PromesasComponent, RxjsComponent, ProfileComponent],
-  imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule, PipesModule, CommonModule],
+     PromesasComponent, RxjsComponent, ProfileComponent, UsuariosComponent, ModalUploadComponent],
+  imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule, PipesModule, CommonModule
+    ],
   exports: [DashboardComponent, ProgessComponent, Graficas1Component, PagesComponent],
   providers: []
 })
