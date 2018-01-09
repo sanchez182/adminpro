@@ -13,13 +13,17 @@ import { IncrementarComponent } from '../components/incrementar/incrementar.comp
 import { AccountSettingdComponent } from './account-settingd/account-settingd.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { ProfileComponent } from './profile/profile.component';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [DashboardComponent, ProgessComponent, Graficas1Component,
-    PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent, PromesasComponent, RxjsComponent],
-  imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule],
+    PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent,
+     PromesasComponent, RxjsComponent, ProfileComponent],
+  imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule, PipesModule, CommonModule],
   exports: [DashboardComponent, ProgessComponent, Graficas1Component, PagesComponent],
   providers: []
 })
