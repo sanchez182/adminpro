@@ -18,12 +18,16 @@ import { ProfileComponent } from './profile/profile.component';
 import { CommonModule } from '@angular/common';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
+import { MedicosComponent } from './medicos/medicos.component';
+import { MedicoComponent } from './medicos/medico.component';
  
 
 @NgModule({
   declarations: [DashboardComponent, ProgessComponent, Graficas1Component,
     PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent,
-     PromesasComponent, RxjsComponent, ProfileComponent, UsuariosComponent, ModalUploadComponent],
+     PromesasComponent, RxjsComponent, ProfileComponent, UsuariosComponent, ModalUploadComponent,
+      HospitalesComponent, MedicosComponent, MedicoComponent],
   imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule, PipesModule, CommonModule
     ],
   exports: [DashboardComponent, ProgessComponent, Graficas1Component, PagesComponent],
