@@ -1,4 +1,6 @@
+
 import { Routes, RouterModule } from '@angular/router';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgessComponent } from './progess/progess.component';
@@ -6,13 +8,16 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 import { AccountSettingdComponent } from './account-settingd/account-settingd.component';
 import { PromesasComponent } from './promesas/promesas.component';
-import { RxjsComponent } from './rxjs/rxjs.component';
+import { LoginGuardGuard } from './../services/services.index';
+
+
 
 
 const pageRoutes: Routes = [
   {
     path: '',
     component: PagesComponent,
+    canActivate: [LoginGuardGuard],
     children: [
       { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Dashboard'} },
       { path: 'progress', component: ProgessComponent, data: { titulo: 'ProgressBars'} },
