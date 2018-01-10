@@ -18,7 +18,7 @@ export class MedicoComponent implements OnInit {
   medico: Medico = new Medico('', '', '', '', '');
   hospital: Hospital = new Hospital('');
 
-  constructor(
+  constructor( 
     public _medicoService: MedicoService,
     public _hospitalService: HospitalService,
     public router: Router,

@@ -21,16 +21,41 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
 import { HospitalesComponent } from './hospitales/hospitales.component';
 import { MedicosComponent } from './medicos/medicos.component';
 import { MedicoComponent } from './medicos/medico.component';
- 
+import { PruebachuzComponent } from './pruebachuz/pruebachuz.component';
 
 @NgModule({
-  declarations: [DashboardComponent, ProgessComponent, Graficas1Component,
-    PagesComponent, IncrementarComponent, GraficoDonaComponent, AccountSettingdComponent,
-     PromesasComponent, RxjsComponent, ProfileComponent, UsuariosComponent, ModalUploadComponent,
-      HospitalesComponent, MedicosComponent, MedicoComponent],
-  imports: [ SharedModule, PAGES_ROUTES, FormsModule, ChartsModule, PipesModule, CommonModule
-    ],
-  exports: [DashboardComponent, ProgessComponent, Graficas1Component, PagesComponent],
+  declarations: [
+    DashboardComponent,
+    ProgessComponent,
+    Graficas1Component,
+    PagesComponent,
+    IncrementarComponent,
+    GraficoDonaComponent,
+    AccountSettingdComponent,
+    PromesasComponent,
+    RxjsComponent,
+    ProfileComponent,
+    UsuariosComponent,
+    ModalUploadComponent,
+    HospitalesComponent,
+    MedicosComponent,
+    MedicoComponent,
+    PruebachuzComponent
+  ],
+  imports: [
+    SharedModule,
+    PAGES_ROUTES,
+    FormsModule,
+    ChartsModule,
+    PipesModule,
+    CommonModule
+  ],
+  exports: [
+    DashboardComponent,
+    ProgessComponent,
+    Graficas1Component,
+    PagesComponent
+  ],
   providers: []
 })
 export class PagesModule {}
